@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Jogo do Adivinha</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="main">
+
+        <div class="part1">
+            <h1>Adivinhe o número</h1>
+            <p>Adivinhe qual é o número, ele está entre 0 e 10</p>
+
+        <form>
+            <input id="inputNumber" type="text" minlength="0" maxlength="2">
+            <button onclick="handleClick(event)">Adivinhar</button>
+        </form>
+        </div>
+
+        <div class="part2 hide">
+            <h2></h2>
+            <button class="focus" onclick="backToGame()">Jogar outra vez</button>
+        </div>
+
+        <div class="part3 hide">
+            <h2>Que pena, você errou as 5 tentativas</h2>
+            <button class="focus" onclick="backToGame()">Jogar outra vez</button>
+        </div>
+
+
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
